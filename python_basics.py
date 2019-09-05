@@ -8,3 +8,11 @@ def fib(max):
  
 f = fib(3)
 
+d = {'a': 1, 'b': 2, 'c': 3}
+for key in d:
+    print(key)
+
+
+e = [x * x for x in range(1, 11)]
+for i in e:
+    print(i)
