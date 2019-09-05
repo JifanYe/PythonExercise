@@ -16,3 +16,6 @@ for key in d:
 e = [x * x for x in range(1, 11)]
 for i in e:
     print(i)
+
+
+    
