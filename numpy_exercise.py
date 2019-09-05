@@ -50,3 +50,4 @@ print(x)
 y = x.view()
 y is x
 
+# fix bug
