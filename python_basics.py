@@ -30,8 +30,26 @@ def count():
 temp = 0
 #f1 = count()
 f1, f2, f3 = count()
-a1, a2, a3 = [1, 3, 5]
 
 print(f1)
 print(f2)
 print(f3)
+
+def calc_sum(*args):
+    ax = 0
+    for n in args:
+        ax = ax + n
+    return ax
+	
+def lazy_sum(*args):
+    def sum():
+        ax = 0
+        for n in args:
+            ax = ax + n
+        return ax
+    return sum
+	
+test_calc_sum = calc_sum(1, 3, 5, 7, 9)
+test_lazy_sum = lazy_sum(1, 3, 5, 7, 9)
+
+print(test_calc_sum, test_lazy_sum())
