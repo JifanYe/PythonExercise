@@ -53,3 +53,12 @@ test_calc_sum = calc_sum(1, 3, 5, 7, 9)
 test_lazy_sum = lazy_sum(1, 3, 5, 7, 9)
 
 print(test_calc_sum, test_lazy_sum())
+
+
+class Student(object):
+    def __init__(self, name):
+        self.name = name
+temp = 0
+s = Student('Bob')
+s.score = 90
+temp = 0
