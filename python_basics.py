@@ -27,9 +27,17 @@ def count():
         fs.append(f)
     
     return fs
-temp = 0
+
+def count1():
+    def f(j):
+        return j*j
+    fs = []
+    for i in range(1, 4):
+        fs.append(f(i))
+    return fs
+
 #f1 = count()
-f1, f2, f3 = count()
+f1, f2, f3 = count1()
 
 print(f1)
 print(f2)

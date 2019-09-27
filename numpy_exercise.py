@@ -41,7 +41,7 @@ print(peoples.ndim)
 '''
 
 a = np.arange(10)**3
-b = a[ : :1]
+b = a
 print(b)
 
 x = np.floor(10*np.random.random((3,4)))
